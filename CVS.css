@@ -1,0 +1,409 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html,
+body {
+  /* margin: 10px auto; */
+  padding: 0;
+  width: 794px; A4 width in pixels at 96 DPI
+  height: 1123px; A4 height in pixels at 96 DPI
+  overflow: hidden; /* Prevent scrolling */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f0f0f0; /* Optional: background color for the area outside the A4 sheet */
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --h1: 36px;
+  --h2: 28px;
+  --h3: 20px;
+  --h4: 16px;
+  --h5: 12px;
+}
+
+.cv-content {
+  width: 794px; /* A4 width in pixels at 96 DPI */
+  height: 1123px; /* A4 height in pixels at 96 DPI */
+  background: white; /* Background color for the A4 page */
+  box-sizing: border-box; /* Ensure padding is included in the width and height */
+  border: 1px solid #000; /* Optional: border to visualize the A4 page */
+  overflow: hidden; /* Prevent content from overflowing */
+  position: relative;
+}
+
+.navbar {
+  /* border: 1px solid black; */
+  height: 22%;
+  display: flex;
+  background: linear-gradient(to right, #0b0b0b77, #fffcdc86);
+  padding-left: 20px;
+}
+
+.info {
+  width: 100%;
+}
+
+img {
+  width: 220px;
+  margin-right: 20px;
+  margin-top: 10px;
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.358);
+}
+
+.Michał {
+  font-size: var(--h1);
+  margin-top: 20px;
+  margin-bottom: 10px;
+  letter-spacing: 1.6px;
+  margin-left: 20px;
+  font-weight: 500;
+  text-align: center;
+  /* background-color: red; */
+}
+
+.Front {
+  font-size: var(--h2);
+  margin-bottom: 24px;
+  letter-spacing: 2px;
+  margin-left: 20px;
+  text-align: center;
+}
+
+h3 {
+  font-size: var(--h4);
+  margin-bottom: 12px;
+  letter-spacing: 1.2px;
+}
+
+i {
+  font-size: 1.2rem;
+}
+
+.infoContainer {
+  width: 300px;
+  display: flex;
+  /* justify-content: space-between; */
+  margin-left: 14px;
+}
+
+.infoContainer h3 {
+  /* background-color: red; */
+  margin-left: 14px;
+}
+
+.infoContainer .newh3 {
+  margin-left: 4px;
+  font-size: var(--h5);
+  margin-top: 2.5px;
+}
+
+.fa-arrow-left {
+  margin-left: 35px;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+hr {
+  margin: 0;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.276);
+}
+
+/* SEKCJA PRACY */
+
+.work {
+
+  /* margin: 0 20px; */
+  width: auto;
+  text-align: left;
+  margin: 0 35px;
+  margin-top: 25px;
+}
+
+
+.header {
+  margin-bottom: 34px;
+  font-weight: 600;
+  border-bottom: 1px solid black;
+  width: 33%;
+  padding-bottom: 1px;
+  font-size: var(--h2);
+  /* background-color: yellow; */
+}
+
+.paragraphs {
+  display: flex;
+  gap: 10px;
+  font-size: var(--h4);
+  justify-content: left;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.ending-section {
+  margin-bottom: 35px;
+}
+
+.work-header {
+  font-size: calc(var(--h3) + 4px);
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.first-work-section {
+  font-size: calc(var(--h4)  + 4px);
+  margin-left: 10px;
+}
+
+.space-section {
+  margin-bottom: 15px;
+}
+
+.second-work-section {
+  font-size: var(--h4);
+  margin-left: 10px;
+}
+
+
+/*  KONIEC SEKCJI PRACA I EDUKACJA */
+/*  SEKCJA PROJEKT */
+
+.projects {
+  width: auto;
+  text-align: left;
+  margin: 0 35px;
+  margin-top: 25px;
+}
+
+.projects-hours {
+  display: flex;
+  margin-top: 12px;
+}
+
+.first-half {
+  border: white 2px solid;
+  width: 91%;
+}
+
+.first-half p {
+  margin-bottom: 13px;
+}
+
+.second-half {
+  text-align: center;
+  width: 9%;
+}
+
+.hot {
+  font-weight: 500;
+}
+
+.second-half p {
+  margin-bottom: 13px;
+}
+
+
+.summary {
+  text-align: left;
+  margin-bottom: 10px;
+  margin-left: 14px;
+}
+
+.summary:last-child {
+  margin-bottom: 20px;
+}
+
+.course-paragraph {
+  margin-bottom: 18px;
+  letter-spacing: 0.3px;
+  font-size: calc(var(--h3) - 2px);
+}
+
+.course-paragraph:last-child {
+  margin-bottom: 30px;
+}
+
+.course-line {
+  margin-bottom: 18px;
+  background-color: rgba(0, 0, 0, 0.05);
+  width: 18%;
+  /* padding-left: 10px; */
+  text-align: center;
+}
+
+/* go skils */
+
+
+
+.projects ul li {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.space-section2 {
+  margin-bottom:20px;
+}
+
+
+
+.containerSkills {
+  display: flex;
+  width: 60%;
+}
+
+.firstSkills {
+  width: 50%;
+  text-align: center;
+}
+
+.secondSkills {
+  width: 50%;
+  text-align: center;
+}
+
+i {
+  font-size: 1rem;
+}
+
+/* ostatnia sekcja */
+
+.rock {
+  font-size: 16px;
+  margin-top: 30px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.made {
+  font-size: 16px;
+  margin-top: 30px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
