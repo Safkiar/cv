@@ -286,6 +286,7 @@ hr {
 .first-work-section {
   font-size: calc(var(--h4)  + 4px);
   margin-left: 10px;
+  margin-bottom: 4px;
 }
 
 .space-section {
@@ -309,8 +310,10 @@ hr {
 }
 
 .projects-hours {
-  display: flex;
+  display: grid;
+  grid-template-columns: 90% auto;
   margin-top: 12px;
+  margin-bottom: 30px;
 }
 
 .first-half {
@@ -361,7 +364,7 @@ hr {
 }
 
 .course-paragraph:last-child {
-  margin-bottom: 30px;
+
 }
 
 .course-line {
